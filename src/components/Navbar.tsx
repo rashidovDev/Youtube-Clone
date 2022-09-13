@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { logo } from "../utils/data"
 import Search from "./Search";
 
-const Navbar = () => (
+const Navbar : React.FC = () => (
   <Stack
   direction = "row"
   alignItems = "center"

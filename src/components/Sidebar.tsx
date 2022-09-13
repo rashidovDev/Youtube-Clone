@@ -1,15 +1,9 @@
-import { Category } from "@mui/icons-material";
 import { Stack } from "@mui/material";
-import { IState as ICategory} from "../typescript/typescript"
-import { categories } from "../utils/data";
+import { categories } from "../utils/data"; 
+import {IState as Props} from "../typescript/typescript"
 
-
-interface IState {
-    setSelectedCategory: React.Dispatch<React.SetStateAction<ICategory["content"]>>
-    selectedCategory: ICategory["content"]
-}
-
-const Sidebar : React.FC<IState> = ({selectedCategory, setSelectedCategory}) => (
+const Sidebar : React.FC <Props> = ({selectedCategory,setSelectedCategory}) => {
+    return (
     <Stack
     direction = "row"
     sx = {{
@@ -18,17 +12,21 @@ const Sidebar : React.FC<IState> = ({selectedCategory, setSelectedCategory}) => 
         flexDirection : { md : "column"},
     }}
     >
-        {categories.map((item,idx) => (
+        {categories.map((category,idx) => (
             <button key={idx} 
+            onClick = {() => setSelectedCategory(category.name)}
             className="category-btn"
-            style ={{ color : "#fff"}}
+            style ={{ color : "#fff",background : (category.name === selectedCategory) ? "#6c6c6c" : ""}}
             >
-              <span style={{ marginRight : "15px"}}>{item.icon}</span>
-              <span>{item.name}</span>
+              
+              <span style={{ marginRight : "15px"}}>{category.icon}</span>
+              <span>{category.name}</span>
             </button>
         ))}
+
     </Stack>
-)
+    )
+}
  
 
 export default Sidebar

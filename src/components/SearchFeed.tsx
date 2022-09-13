@@ -1,8 +1,8 @@
 import React from 'react'
 
-const SearchFeed = () => {
+const SearchFeed : React.FC = () => {
   return (
-    <div>SearchFeed</div>
+    <div> </div>
   )
 }
 

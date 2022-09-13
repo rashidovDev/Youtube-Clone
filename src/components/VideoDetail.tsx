@@ -1,6 +1,6 @@
 import React from 'react'
 
-const VideoDetail = () => {
+const VideoDetail : React.FC= () => {
   return (
     <div>VideoDetail</div>
   )

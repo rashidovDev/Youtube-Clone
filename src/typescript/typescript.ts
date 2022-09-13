@@ -1,5 +1,4 @@
 export interface IState {
-    content : {
-        category : string
-    }[]
+    selectedCategory : string,
+    setSelectedCategory : React.Dispatch<React.SetStateAction<string>>
 }
