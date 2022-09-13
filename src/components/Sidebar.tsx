@@ -18,7 +18,6 @@ const Sidebar : React.FC <Props> = ({selectedCategory,setSelectedCategory}) => {
             className="category-btn"
             style ={{ color : "#fff",background : (category.name === selectedCategory) ? "#6c6c6c" : ""}}
             >
-              
               <span style={{ marginRight : "15px"}}>{category.icon}</span>
               <span>{category.name}</span>
             </button>
