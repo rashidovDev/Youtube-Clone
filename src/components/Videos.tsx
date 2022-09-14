@@ -38,6 +38,7 @@ interface IState {
 }
 
 const Videos : React.FC < any > = ({videos}) => {
+  console.log(videos)
   return (
      <Stack direction="row" flexWrap="wrap" justifyContent="start" gap={2}>
       {videos.map((item : any,idx : number) => (
