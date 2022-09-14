@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 import { Videos, ChannelCard} from "./navigate";
 import { fetchFromAPI } from "../utils/fetchFromApi";
 
-const ChannelDetail = () => {
+const ChannelDetail : React.FC = () => {
   const [channelDetail, setChannelDetail] = useState(null)
   const [videos, setVideos] = useState([])
 
