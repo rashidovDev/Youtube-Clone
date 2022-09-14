@@ -18,6 +18,7 @@ export const categories = [
   { name: 'New', icon: <HomeIcon/>, },
   { name: 'Linguamarina', icon: <HomeIcon/>, },
   { name: "Rachel's English", icon: <HomeIcon/>, },
+  { name: "Javascript Mastery", icon: <HomeIcon/>, },
   { name: 'Music', icon: <MusicNoteIcon /> },
   { name: 'Education', icon: <SchoolIcon />, },
   { name: 'Podcast', icon: <GraphicEqIcon />, },
