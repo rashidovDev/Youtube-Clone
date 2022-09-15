@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Typography,Card,CardContent,CardMedia } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
 
-import { demoThumbnailUrl, demoVideoUrl, demoVideoTitle, demoChannelUrl, demoChannelTitle } from "../utils/data";
+import { demoThumbnailUrl, demoVideoUrl, demoVideoTitle, demoChannelUrl, demoChannelTitle,demoProfilePicture } from "../utils/data";
 
 const VideoCard  = ({ video: { id: { videoId }, snippet } }) => {
 
@@ -22,13 +22,17 @@ const VideoCard  = ({ video: { id: { videoId }, snippet } }) => {
   return (
     <Card sx={{ width: { xs: '100%', sm: '358px', md: "300px", }, boxShadow: "none", borderRadius: 0 }}>
     <Link to={videoId ? `/video/${videoId}` : `/video/cV2gBU6hKfY` }>
-      <CardMedia image={snippet?.thumbnails?.high?.url || demoThumbnailUrl} alt={snippet?.title} 
-        sx={{ width: { xs: '100%', sm: '358px'}, height: 180 }} 
+      <CardMedia image = {snippet?.thumbnails?.high?.url || demoProfilePicture} alt={snippet?.title} 
+        sx={{ width: { xs: '100%', sm: '358px',md : "300px"}, height: 180 }} 
       />
     </Link>
     <CardContent sx={{ backgroundColor: "#1E1E1E", height: '106px' }}>
-      <Link to={videoId ? `/video/${videoId}` : demoVideoUrl } >
-        <Typography variant="subtitle2" fontWeight="bold" color="#FFF">
+   
+      <Link to={videoId ? `/video/${videoId}` : demoVideoUrl } style={{display: "flex", marginBottom:"10px" }} >
+      <CardMedia image={snippet?.thumbnails?.high?.url || demoThumbnailUrl} alt={snippet?.title} 
+        sx={{ width: { xs: '100%', sm: '50px',md : "500px"}, height: 50, width : 80,borderRadius:"50%", marginRight:"20px" }} 
+      />
+        <Typography fontWeight="bold" color="#FFF" sx={{ fontSize : "13px"}}>
           {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
         </Typography>
       </Link>

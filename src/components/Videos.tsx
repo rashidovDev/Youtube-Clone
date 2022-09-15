@@ -1,5 +1,5 @@
 import {Stack, Box} from "@mui/material";
-import {ChannelCard, VideoCard} from "../components/navigate"
+import {ChannelCard, VideoCard,Loader} from "../components/navigate"
 
 interface IState {
   videos : {
@@ -37,10 +37,13 @@ interface IState {
   }[]
 }
 
-const Videos : React.FC < any > = ({videos}) => {
+const Videos : React.FC < any > = ({videos,direction}) => {
+   
   console.log(videos)
+  if(!videos?.length) return <Loader/>
+
   return (
-     <Stack direction="row" flexWrap="wrap" justifyContent="start" gap={2}>
+     <Stack direction={direction || "row"} flexWrap="wrap" justifyContent="start" gap={2}>
       {videos.map((item : any,idx : number) => (
       <Box key={idx}>
         { item.id.videoId && <VideoCard video={item}/>}
