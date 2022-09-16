@@ -1,8 +1,10 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import { Box } from "@mui/material"
-import {Navbar, Feed, VideoDetail, ChannelDetail, SearchFeed} from "./components/navigate"
+import {Navbar, Feed, VideoDetail, ChannelDetail, SearchFeed} from "./components/navigate";
+import { SkeletonTheme } from "react-loading-skeleton";
 
 const App = () => (
+  <SkeletonTheme baseColor="#202020" highlightColor="#444" duration={1}>
   <BrowserRouter>
   <Box sx = {{backgroundColor : "#202020"}}>
     <Navbar/> 
@@ -14,7 +16,7 @@ const App = () => (
     </Routes>
   </Box>
   </BrowserRouter>
+  </SkeletonTheme>
 )
-
 
 export default App;

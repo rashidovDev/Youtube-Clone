@@ -88,4 +88,43 @@ a {
   .search-bar{
     width:200px;
   }
+  .account {
+     visibility: hidden;
+     display: none;
+  }
+  .paper {
+    display: flex;
+  }
+  
+}
+.account {
+  align-items: center;
+  display: flex;
+  padding: 5px 10px;
+  border: 1px solid #434343;
+  border-radius: 10px;
+  color: #fff;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.loader{
+  margin:10px 20px 20px 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.loader-bottom{
+  display: flex;
+  align-items: center;
+}
+.loader-text{
+  margin-bottom: 10px;
+}
+
+@media (max-width : 600px){
+  .loader{
+    display: flex;
+    flex-direction: column;
+  }
 }

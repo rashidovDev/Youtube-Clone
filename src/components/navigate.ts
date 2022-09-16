@@ -8,5 +8,7 @@ export {default as Sidebar } from "./Sidebar";
 export {default as Videos } from "./Videos";
 export {default as VideoCard} from "./VideoCard";
 export {default as ChannelCard} from "./ChannelCard";
-export {default as Loader} from "./Loader"
+export {default as Account} from "./Account";
+export {default as Loader} from "./Loader";
+export {default as LoaderVideo} from "./LoaderVideo";
 

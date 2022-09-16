@@ -14,24 +14,24 @@ const Search : React.FC = () => {
     e.preventDefault(); 
     if(searchTerm) {
       navigate(`/search/${searchTerm}`); 
-      setSearchTerm('')
     }
   }
 
   return (
     <Paper
+    className='paper'
     component = "form"
     onSubmit = {handleSubmit}
     sx = {{
-        background: "#121212",
-        border : "1px solid #373737",
+        background: "#222",
+        border : "1px solid #434343",
         pl : 2,
         boxShadow : "none",
         mr : { sm : 5}
     }}
     >
         <input
-         style={{ background: "#121212",color :"#fff",fontSize:"16px"}}
+         style={{ background: "#222",color:"#fff",fontSize:"16px"}}
          type="text" 
          className="search-bar"
          placeholder='Search...'

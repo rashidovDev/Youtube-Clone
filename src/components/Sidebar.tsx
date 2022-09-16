@@ -18,8 +18,9 @@ const Sidebar : React.FC <Props> = ({selectedCategory,setSelectedCategory}) => {
             className="category-btn"
             style ={{ color : "#fff",background : (category.name === selectedCategory) ? "#6c6c6c" : ""}}
             >
-              <span style={{ marginRight : "15px"}}>{category.icon}</span>
-              <span>{category.name}</span>
+              <img src={category.image} alt="icon" style={{width:"25px", height:"25px",
+              borderRadius:"50%",marginRight:"10px"}}/>
+              <span style={{whiteSpace:"nowrap", overflow:"hidden", textOverflow:"hidden"}}>{category.name}</span>
             </button>
         ))}
 

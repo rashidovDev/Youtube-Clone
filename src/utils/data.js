@@ -1,36 +1,39 @@
-import MusicNoteIcon from '@mui/icons-material/MusicNote';
-import HomeIcon from '@mui/icons-material/Home';
-import CodeIcon from '@mui/icons-material/Code';
-import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
-import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
-import LiveTvIcon from '@mui/icons-material/LiveTv';
-import SchoolIcon from '@mui/icons-material/School';
-import FaceRetouchingNaturalIcon from '@mui/icons-material/FaceRetouchingNatural';
-import CheckroomIcon from '@mui/icons-material/Checkroom';
-import GraphicEqIcon from '@mui/icons-material/GraphicEq';
-import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
-import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
-import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
+import ClearEnglish from "../assets/clearenglish.jpg";
+import FastTrack from "../assets/fasttrack.jpg";
+import FreeCode from "../assets/freecode.png";
+import Friends from "../assets/friends.jpg";
+import FullStack from "../assets/fullstack.jpg";
+import JomaShorts from "../assets/jomashorts.jpg";
+import LinguaMarina from "../assets/linguamarina.png";
+import NasDaily from "../assets/nasdaily.jpg";
+import Ninja from "../assets/ninja.png";
+import PedroTech from "../assets/pedrotech.jpg";
+import Rachel from "../assets/rachel.jpg";
+import Saidbek from "../assets/saidbek.jpg";
+import Steve from "../assets/steve.jpg";
+import TedTalks from "../assets/tedtalks.jpg";
+import VOA from "../assets/voa.jpg";
+import WebSimplified from "../assets/websimplified.jpg";
 
 export const logo = 'https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png';
 
 export const categories = [
-  { name: 'New', icon: <HomeIcon/>, },
-  { name: 'Linguamarina', icon: <HomeIcon/>, },
-  { name: "Rachel's English", icon: <HomeIcon/>, },
-  { name: "Javascript Mastery", icon: <HomeIcon/>, },
-  { name: 'Music', icon: <MusicNoteIcon /> },
-  { name: 'Education', icon: <SchoolIcon />, },
-  { name: 'Podcast', icon: <GraphicEqIcon />, },
-  { name: 'Movie', icon: <OndemandVideoIcon />, },
-  { name: 'Gaming', icon: <SportsEsportsIcon />, },
-  { name: 'Live', icon: <LiveTvIcon />, },
-  { name: 'Sport', icon: <FitnessCenterIcon />, },
-  { name: 'Fashion', icon: <CheckroomIcon />, },
-  { name: 'Beauty', icon: <FaceRetouchingNaturalIcon />, },
-  { name: 'Comedy', icon: <TheaterComedyIcon />, },
-  { name: 'Gym', icon: <FitnessCenterIcon />, },
-  { name: 'Crypto', icon: <DeveloperModeIcon />, },
+  { name: 'freeCodeCamp', image: FreeCode, },
+  { name: 'linguamarina', image: LinguaMarina, },
+  { name: "Web Dev Simplified", image: WebSimplified , },
+  { name: "Nas Daily", image:NasDaily , },
+  { name: 'Steve TV Show', image:Steve   },
+  { name: 'The Net Ninja', image:Ninja  , },
+  { name: 'VOA learning English', image: VOA , },
+  { name: 'Joma Shorts', image:JomaShorts , },
+  { name: 'Saidbek Arslonov', image: Saidbek, },
+  { name: 'Ted Talks', image:TedTalks , },
+  { name: 'Clear English Corner', image:ClearEnglish , },
+  { name: 'PedroTech', image:PedroTech, },
+  { name: 'Friends', image: Friends, },
+  { name: "Rachel's English", image:Rachel , },
+  { name: 'The Full Stack Junkie', image:FullStack, },
+  { name: 'FastTrack English', image:FastTrack , },
 ];
 
 export const demoThumbnailUrl = 'https://i.ibb.co/G2L2Gwp/API-Course.png';
@@ -39,3 +42,42 @@ export const demoVideoUrl = '/video/GDa8kZLNhJ4';
 export const demoChannelTitle = 'JavaScript Mastery';
 export const demoVideoTitle = 'Build and Deploy 5 JavaScript & React API Projects in 10 Hours - Full Course | RapidAPI';
 export const demoProfilePicture = 'http://dergipark.org.tr/assets/app/images/buddy_sample.png'
+
+export const loader = [
+  {
+    id : 1,
+  },
+  {
+    id : 2,
+  },
+  {
+    id : 3,
+  },
+  {
+    id : 4,
+  },
+  {
+    id : 5,
+  },
+  {
+    id : 6,
+  },
+  {
+    id : 7,
+  },
+  {
+    id : 8,
+  },
+  {
+    id : 9,
+  },
+  {
+    id : 10,
+  },
+  {
+    id : 11,
+  },
+  {
+    id : 12,
+  }
+]
