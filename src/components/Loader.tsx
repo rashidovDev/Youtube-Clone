@@ -9,8 +9,10 @@ const Loader  = ({videos}:any) => {
     <>
      <div  className='loader'>
      {loader.map((item, idx) => (
-      <div key={idx}>
-      <Skeleton width={300} height={180} style={{paddingBottom:"10px"}}/>
+      <div key={idx} style={{marginBottom:"12px"}}>
+       <div style={{paddingBottom:"5px"}}>
+      <Skeleton width={320} height={180}/>
+       </div>
       <div className="loader-bottom">
       <Skeleton circle={true} width={30} height={30}/>
       <div>
